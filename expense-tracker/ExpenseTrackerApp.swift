@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct expense_trackerApp: App {
+struct ExpenseTrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
