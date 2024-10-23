@@ -12,14 +12,14 @@ import SwiftUI
 @Model
 class AccountModel: Identifiable {
     @Attribute(.unique)
-    var id: String
+    var id: UUID
     
     var name: String
     var initialBalance: Double
     var iconString: String
     
     init(name: String, initialBalance: Double, iconString: String) {
-        self.id = UUID().uuidString
+        self.id = UUID()
         self.name = name
         self.initialBalance = initialBalance
         self.iconString = iconString
